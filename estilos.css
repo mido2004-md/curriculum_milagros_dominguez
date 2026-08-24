@@ -1,0 +1,12 @@
+/*estilo css*/
+img{
+    display:block;
+    margin:auto
+}
+body{
+    background-color: hwb(314 68% 3%);
+}
+
+*{font-family: "Hind-regular", sans-serif;
+    text-align: center;
+}
