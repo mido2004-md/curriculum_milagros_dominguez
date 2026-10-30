@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio 2026 </title>
+    <title>Portfolio 2026</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="img/mido.png">
     <style>
@@ -12,45 +13,86 @@
 </head>
 
 <body>
-
     <header class="menu">
         <div class="imagen-principal">
-            <img class="foto-principal"src="img/mido.png" alt="foto-mido" width="100" height="100">
-                <div class="nombre-principal">
+            <img class="foto-principal" src="img/mido.png" alt="Foto de Mili" width="100" height="100">
+            <div class="nombre-principal">
                 <h1>Milagros Dominguez</h1>
                 <p>Portfolio | Estudiante | Futura Diseñadora</p>
-                </div>
+            </div>
         </div>
         <nav class="navegacion">
             <a href="sobre-mi.html" class="header">Sobre mí</a>
             <a href="portfolio.html" class="header">Portfolio</a>
-            <a href="contacto.html" class="header">Contacto</a>
+            <a href="#" id="btnContacto">Contacto</a>
         </nav>
     </header>
-
     <main>
         <section class="portada">
-            <img src="img/portfolio.png" alt="portfolio-2026" width="1510px">
+            <img src="img/portfolio.png" alt="Portfolio 2026" width="1510">
         </section>
     </main>
-
     <footer>
         <a class="estrella-footer" href="index.html">
-            <img src="img/estrella.png" alt="volver-inicio" width="70px" height="70px">
+            <img src="img/estrella.png" alt="Volver al inicio" width="70" height="70">
         </a>
-        <nav class="enlaces-footer">
-            <a href="sobre-mi.html">Sobre mí</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
         <div class="redes">
             <a class="boton-imagen" href="https://www.behance.net/milagrodomingu3" target="_blank" rel="noopener-noreferrer">
-                <img src="img/behance.png" alt="Behance" width="50px" height="50px">
+                <img src="img/behance.png" alt="Behance" width="50" height="50">
             </a>
             <a class="boton-imagen" href="https://www.instagram.com/mido.dg_/" target="_blank" rel="noopener-noreferrer">
-                <img src="img/instagram.png" alt="Instagram" width="50px" height="50px">
+                <img src="img/instagram.png" alt="Instagram" width="50" height="50">
             </a>
         </div>
     </footer>
+
+    <!-- contacto, CANAS VERDES ME SACO -->
+    <div class="modal-overlay" id="modalContacto">
+        <div class="modal-container">
+
+            <button type="button" class="modal-close-btn" id="cerrarModal">&times;</button>
+
+            <div class="modal-content">
+
+                <div class="modal-avatar-container">
+                    <img src="img/mido.png" alt="Avatar de Mili" class="modal-avatar-img">
+                </div>
+
+                <div class="modal-form-container">
+
+                    <h2>Trabajemos juntxs!!</h2>
+
+                    <p>Para contactarte conmigo llena los espacios vacíos ;)</p>
+
+                    <form class="contact-form">
+
+                        <div class="form-group">
+                            <label for="nombre">Nombre y apellido</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        </div>
+
+                    </form>
+
+                    <button type="button" class="boton-cerrar-modal" id="cerrarModalAbajo">
+                        VOLVER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="contacto.js"></script>
 </body>
-</html
+</html>
